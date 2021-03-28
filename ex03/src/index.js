@@ -1,21 +1,13 @@
 // Only change code below this line
 class Person {
-    get display() {
-        var message = 'Static method is invoked from Person class';
+    static display() {
+        var message = "Static method is invoked from Person class";
+        return message;
     }
-
-    constructor(show) {
-        message.show = show;
-    }
-    static show() {
-        console.log("Static method is invoked from Person class");
+    show() {
+        console.log(Person.display());
     }
 }
-Person.show();
-return message;
-
-
-
 // Only change code above this line
 var message = new Person();
 message.show();

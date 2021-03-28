@@ -4,22 +4,12 @@ class Person {
         this.email = email;
         this.age = age;
     }
-
     getPerson() {
+        let personInfo =
+            "Name: " + this.name + ", email: " + this.email + ", age: " + this.age;
         return personInfo;
-
     }
 }
-let personInfo = new Person('Name: ${name}', 'email: ${email}', 'age: ${age}');
-
-function getPerson() {
-    return personInfo;
-
-
-}
-
-getPerson();
-console.log(getPerson('Name: ${name}'));
-console.log(getPerson('email: ${email}'));
-console.log(getPerson('age: ${age}'));
+let person = new Person();
+console.log(person.getPerson());
 module.exports = Person;

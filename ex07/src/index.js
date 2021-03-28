@@ -1,2 +1,2 @@
-let person = require('./namefunction');
-console.log('JOHN', 'doe');
+let person = require("./nameFunctions");
+console.log(person.firstName("john"), person.lastName("Doe"));
